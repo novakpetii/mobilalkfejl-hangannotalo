@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvFilterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Szűrő beállítások"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+
+    <EditText
+        android:id="@+id/etMinFileSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minimális fájlméret (MB)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etMaxFileSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Maximális fájlméret (MB)"
+        android:inputType="numberDecimal" />
+
+
+    <Spinner
+        android:id="@+id/spinnerFileType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+
+    <EditText
+        android:id="@+id/etMinDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minimális hossz (s)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etMaxDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Maximális hossz (s)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnApplyFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listázás"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
